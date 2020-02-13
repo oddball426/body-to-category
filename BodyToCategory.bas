@@ -44,7 +44,7 @@ End Sub
 ' Strip a specific tag string from email body
 Public Sub StripTag(ByRef Item As Outlook.MailItem)
     ' The offending string to strip out (any * before and after included)
-    Const s As String = "External email: use caution"
+    Const s As String = "This message comes from outside of the corporate network. Please do not click links or open attachments unless you recognize the source of this e-mail and know the content is safe. "
 
     ' Strip string frombody
     BodyToCategory Item, s
